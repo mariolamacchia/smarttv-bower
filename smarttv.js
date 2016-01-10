@@ -1,4 +1,4 @@
-(function(window) {
+(function(window, $, io) {
   'use strict';
 
   var smarttv = {};
@@ -45,4 +45,4 @@
     $('#st-hidden-input').focus();
   };
 
-})(window);
+})(window, $, io);
