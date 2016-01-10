@@ -6,8 +6,12 @@
 
   // Socket
   var socket = io.connect('/');
-  smarttv.send = io.send;
-  smarttv.on = io.on;
+  smarttv.send = function() {
+    socket.emit.apply(socket, arguments);
+  };
+  smarttv.on = function() {
+    socket.on.apply(socket, arguments);
+  };
 
   // Apps
   $.get('/api/apps', function(apps) {
