@@ -33,7 +33,7 @@
   };
 
   // Hidden keyboard
-  $(document).ready(function() {
+  $(document).on('pageinit', function() {
     $('body').append(
       $('<input type=text id="st-hidden-input">')
         .width(window.innerWidth)
