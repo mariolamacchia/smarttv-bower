@@ -1,0 +1,22 @@
+{
+  "name": "smarttv",
+  "homepage": "https://github.com/mariolamacchia/smarttv-bower",
+  "authors": [
+    "Mario Lamacchia <mariolamacchia@gmail.com>"
+  ],
+  "description": "Client library for SmartTv",
+  "main": "smarttv.js",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "~1.4.3",
+    "jquery": "~2.2.0"
+  }
+}
